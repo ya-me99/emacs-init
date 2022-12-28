@@ -9,6 +9,7 @@
 (menu-bar-mode -1)
 (global-display-line-numbers-mode 2)
 
+(setq electric-indent-mode -1);
 
 (require 'package)
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
