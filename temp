@@ -1,0 +1,41 @@
+Emacs Lisp Basics
+
+Lisp is core concept is Evrything is a list
+
+a list looks like this (ab cd) it contains
+ab and cd called atoms basicly variables
+they may be data or functions
+seperated by whitespace
+
+if a list is quoted '(abcd dd) it is evaluated not to execute
+commands
+
+if it is unqouted (abcd dd) the first atom is considerd a
+command the following are considerd arguments
+
+Set Variable With setq , set  oder let
+setq sets a atom to some value the quote has the same meaning
+as usuall
+
+(setq flower 1)
+(describe-variable 'flower)
+returns flowers value = 1
+
+set would evaluate the atom flower as a command
+
+let can be used to define a value with block scope effectifly
+
+(let ((test 100))
+      (describe-variable test))
+
+
+(+ 2 2)
+
+
+(defun multiply-by-seven (number)       ; Interactive version.
+  "Multiply NUMBER by seven."
+  (interactive "p")
+  (message "The result is %d" (* 7 number)))
+
+
+
